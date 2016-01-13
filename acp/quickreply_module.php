@@ -7,7 +7,7 @@
 *
 */
 
-namespace tatiana5\quickreply\acp;
+namespace boardtools\quickreply\acp;
 
 class quickreply_module
 {
@@ -21,7 +21,7 @@ class quickreply_module
 
 		$this->page_title = 'ACP_QUICKREPLY';
 		$this->tpl_name = 'acp_quickreply';
-		$user->add_lang_ext('tatiana5/quickreply', 'quickreply');
+		$user->add_lang_ext('boardtools/quickreply', 'quickreply');
 
 		$submit = ($request->is_set_post('submit')) ? true : false;
 		$form_key = 'config_quickreply';
@@ -57,6 +57,7 @@ class quickreply_module
 				'qr_show_subjects'		=> array('lang' => 'ACP_QR_SHOW_SUBJECTS', 'validate' => 'bool', 'type' => 'radio:yes_no', 'explain' => false),
 				'qr_show_subjects_in_search'	=> array('lang' => 'ACP_QR_SHOW_SUBJECTS_IN_SEARCH', 'validate' => 'bool', 'type' => 'radio:yes_no', 'explain' => false),
 				'qr_show_button_translit'		=> array('lang' => 'ACP_QR_SHOW_BUTTON_TRANSLIT', 'validate' => 'bool', 'type' => 'radio:yes_no', 'explain' => false),
+				'qr_hide_subject_box'			=> array('lang' => 'ACP_QR_HIDE_SUBJECT_BOX', 'validate' => 'bool', 'type' => 'radio:yes_no', 'explain' => true),
 
 				'legend4'					=> 'ACP_SUBMIT_CHANGES',
 			),

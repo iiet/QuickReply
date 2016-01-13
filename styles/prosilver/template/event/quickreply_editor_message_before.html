@@ -170,7 +170,7 @@
 <!-- EVENT ext_quickreply_editor_buttons_after -->
 </div>
 <!-- ENDIF -->
-<!-- IF S_QR_CAPS_ENABLE  or S_QR_SHOW_BUTTON_TRANSLIT-->
+<!-- IF S_QR_CAPS_ENABLE or S_QR_SHOW_BUTTON_TRANSLIT-->
 <div id="register-and-translit">
 <!-- IF S_QR_CAPS_ENABLE -->
 	<abbr style="border-bottom:1px dashed #777; cursor:help;" title="{L_QR_TRANSFORM_TEXT_TOOLTIP}">{L_QR_TRANSFORM_TEXT}</abbr>&nbsp;
@@ -187,7 +187,7 @@
 <!-- EVENT ext_quickreply_transform_text_buttons_after -->
 
 	<div id="smiley-box">
-        <!-- EVENT ext_quickreply_smiley_box_prepend -->
+		<!-- EVENT ext_quickreply_smiley_box_prepend -->
 		<!-- IF S_SMILIES_ALLOWED and .smiley -->
 			<strong>{L_SMILIES}</strong><br />
 			<!-- BEGIN smiley -->
@@ -197,5 +197,5 @@
 		<!-- IF S_SHOW_SMILEY_LINK and S_SMILIES_ALLOWED-->
 			<br /><a href="{U_MORE_SMILIES}" onclick="popup(this.href, 300, 350, '_phpbbsmilies'); return false;">{L_MORE_SMILIES}</a>
 		<!-- ENDIF -->
-        <!-- EVENT ext_quickreply_smiley_box_append -->
+		<!-- EVENT ext_quickreply_smiley_box_append -->
 	</div>
